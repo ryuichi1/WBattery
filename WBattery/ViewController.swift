@@ -85,9 +85,11 @@ class ViewController: NSViewController, UNUserNotificationCenterDelegate {
         
         switch powerSourceStatus {
         case "AC Power":
+            batteryStatusTextField.stringValue = "充電しています"
             break
             
         default:
+            batteryStatusTextField.stringValue = "充電していません"
             if currentCapacity <= targetPercent {
                 showNotification()
             }
