@@ -709,35 +709,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="302"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="50" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3E-qb-hip">
-                                <rect key="frame" x="137" y="47" width="207" height="208"/>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="30" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3E-qb-hip">
+                                <rect key="frame" x="152" y="25" width="177" height="252"/>
                                 <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="247-a1-IWS">
-                                        <rect key="frame" x="49" y="192" width="109" height="16"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Watching Battery" id="hdm-4J-ay9">
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qtQ-6V-7ox">
+                                        <rect key="frame" x="38" y="152" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="S2d-oi-Thy"/>
+                                            <constraint firstAttribute="width" constant="100" id="ZwX-23-3CQ"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon" id="yJy-OL-eu8"/>
+                                    </imageView>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYe-K8-688">
-                                        <rect key="frame" x="0.0" y="97" width="207" height="45"/>
+                                        <rect key="frame" x="0.0" y="77" width="177" height="45"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Uh-pk-r2V">
-                                                <rect key="frame" x="59" y="29" width="89" height="16"/>
+                                                <rect key="frame" x="44" y="29" width="89" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="充電しています" id="jbs-An-kST">
-                                                    <font key="font" size="13" name=".AppleJapaneseFont-Bold"/>
+                                                    <font key="font" size="13" name=".AppleJapaneseFont-Regular"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
                                             <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-KF-UFr">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="19"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="19"/>
                                                 <subviews>
                                                     <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nJT-Lw-g8n">
-                                                        <rect key="frame" x="0.0" y="-4" width="103" height="25"/>
+                                                        <rect key="frame" x="0.0" y="-4" width="73" height="25"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="wkQ-Nz-F9E"/>
+                                                            <constraint firstAttribute="width" constant="70" id="wkQ-Nz-F9E"/>
                                                         </constraints>
                                                         <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="gcH-Qv-Rxs">
                                                             <font key="font" metaFont="system"/>
@@ -746,7 +746,7 @@
                                                         </comboBoxCell>
                                                     </comboBox>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="93d-gK-t5g">
-                                                        <rect key="frame" x="108" y="2" width="101" height="16"/>
+                                                        <rect key="frame" x="78" y="2" width="101" height="16"/>
                                                         <textFieldCell key="cell" lineBreakMode="clipping" title="％以下で通知する" id="GqH-uS-cok">
                                                             <font key="font" usesAppearanceFont="YES"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -774,7 +774,7 @@
                                         </customSpacing>
                                     </stackView>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-Fg-nav">
-                                        <rect key="frame" x="55" y="0.0" width="97" height="47"/>
+                                        <rect key="frame" x="40" y="0.0" width="97" height="47"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1ZT-N6-Y0H">
                                                 <rect key="frame" x="-2" y="31" width="101" height="16"/>
@@ -785,8 +785,8 @@
                                                 </textFieldCell>
                                             </textField>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Vz-1V-Jys">
-                                                <rect key="frame" x="0.0" y="-7" width="97" height="32"/>
-                                                <buttonCell key="cell" type="push" title="Watching" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NGr-Cm-yMa">
+                                                <rect key="frame" x="4" y="-7" width="89" height="32"/>
+                                                <buttonCell key="cell" type="push" title="監視する" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NGr-Cm-yMa">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" usesAppearanceFont="YES"/>
                                                 </buttonCell>
@@ -833,4 +833,7 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon" width="310" height="310"/>
+    </resources>
 </document>

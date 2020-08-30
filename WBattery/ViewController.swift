@@ -67,7 +67,7 @@ class ViewController: NSViewController, UNUserNotificationCenterDelegate {
     @IBAction func watchingButtonDidTap(_ sender: Any) {
         guard let targetPercent = percentComboBox.objectValueOfSelectedItem as? Int else { return }
         self.targetPercent = targetPercent
-        watchingTextField.stringValue = "\(targetPercent)%以下でアラートします"
+        watchingTextField.stringValue = "\(targetPercent)%以下で通知します"
         timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(checkBattery), userInfo: nil, repeats: true)
     }
     
